@@ -219,7 +219,8 @@ public class KeyguardStatusView extends GridLayout {
 		/* <-- wangmingdong -5-6-2013 20:15:50 */
 		userInfo = (TextView) findViewById(R.id.lockscreen_user_info);
 		Log.i("doom-lockscreen", "keyguardstatusview userInfo" + userInfo);
-		Typeface typeface = Typeface.createFromFile("/system/fonts/kaiti.ttf");
+	//	Typeface typeface = Typeface.createFromFile("/system/fonts/kaiti.ttf");
+		Typeface typeface= Typeface.createFromAsset(mContext.getAssets(), "fonts/SamsungSans-Light.ttf");  
 		Log.d("doom-lockscreen", "keyguardstatusview typeface:" + typeface);
 		userInfo.setTypeface(typeface);
 		/* --> wangmingdong */
